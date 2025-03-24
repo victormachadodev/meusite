@@ -1,0 +1,70 @@
+body {
+    background-color: #0b0014; /* Fundo escuro mais bonito */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Centralizando e deixando mais transparente */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.05); /* Mais transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.buttons {
+    margin-top: 20px;
+}
+button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+.yes-btn {
+    background-color: #ff4081;
+    color: white;
+}
+.no-btn {
+    background-color: gray;
+    color: white;
+}
+.hidden {
+    display: none;
+}
+
+/* Estilos para a animação dos emojis */
+.emoji {
+    position: absolute;
+    font-size: 2rem;
+    top: -50px;
+    animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
